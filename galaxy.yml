@@ -7,8 +7,8 @@ version: 1.0.0
 readme: README.md
 
 authors:
-- Gautam Verma @ggverma (https://vmware.slack.com/archives/CTE293BSS)
-- Rahul Raghuvanshi @r-raghu (https://vmware.slack.com/archives/CTE293BSS)
+- Gautam Verma @ggverma
+- Rahul Raghuvanshi @r-raghu
 
 description: Ansible Modules for NSX-t
 
