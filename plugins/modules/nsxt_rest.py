@@ -153,7 +153,7 @@ body:
 import os
 import json
 from ansible.module_utils.basic import AnsibleModule
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import vmware_argument_spec
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import vmware_argument_spec
 from ansible.module_utils.urls import basic_auth_header, fetch_url
 
 

@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Add Static Routes on a Logical Router
-      vmware.ansible_for_nsxt.nsxt_logical_router_static_routes:
+      expedient.ansible_for_nsxt.nsxt_logical_router_static_routes:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

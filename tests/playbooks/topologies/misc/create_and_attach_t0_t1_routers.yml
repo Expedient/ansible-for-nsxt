@@ -16,7 +16,7 @@
   
   tasks:
     - name: Create T0
-      vmware.ansible_for_nsxt.nsxt_logical_routers:
+      expedient.ansible_for_nsxt.nsxt_logical_routers:
         hostname: "{{ nsx }}"
         username: "{{ user }}"
         password: "{{ password }}"
@@ -28,7 +28,7 @@
         high_availability_mode: "ACTIVE_ACTIVE"
 
     - name: Create T1
-      vmware.ansible_for_nsxt.nsxt_logical_routers:
+      expedient.ansible_for_nsxt.nsxt_logical_routers:
         hostname: "{{ nsx }}"
         username: "{{ user }}"
         password: "{{ password }}"
@@ -39,7 +39,7 @@
         router_type: "TIER1"
 
     - name: Create Tier0 router port to Tier1
-      vmware.ansible_for_nsxt.nsxt_logical_router_ports:
+      expedient.ansible_for_nsxt.nsxt_logical_router_ports:
         hostname: "{{ nsx }}"
         username: "{{ user }}"
         password: "{{ password }}"
@@ -61,7 +61,7 @@
       register: ports
 
     - name: Create Tier1 router port to Tier0
-      vmware.ansible_for_nsxt.nsxt_logical_router_ports:
+      expedient.ansible_for_nsxt.nsxt_logical_router_ports:
         hostname: "{{ nsx }}"
         username: "{{ user }}"
         password: "{{ password }}"

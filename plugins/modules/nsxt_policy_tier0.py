@@ -36,7 +36,7 @@ description: Creates/Updates/Deletes a Tier-0 resource using the Policy API.
 version_added: '2.8'
 author: 'Gautam Verma'
 extends_documentation_fragment:
-    - vmware.ansible_for_nsxt.vmware_nsxt
+    - expedient.ansible_for_nsxt.vmware_nsxt
 options:
     id:
         description: Tier-0 ID
@@ -1244,8 +1244,8 @@ import json
 import time
 from ansible.module_utils.basic import AnsibleModule
 from ansible.module_utils._text import to_native
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.nsxt_base_resource import NSXTBaseRealizableResource
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.nsxt_resource_urls import (
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.nsxt_base_resource import NSXTBaseRealizableResource
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.nsxt_resource_urls import (
     TIER_0_URL, IPV6_DAD_PROFILE_URL, IPV6_NDRA_PROFILE_URL,
     DHCP_RELAY_CONFIG_URL, EDGE_CLUSTER_URL, EDGE_NODE_URL, SEGMENT_URL,
     TIER_0_STATIC_ROUTE_URL, TIER_0_LOCALE_SERVICE_URL,

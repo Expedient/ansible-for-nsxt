@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Register a name-certificate combination
-      vmware.ansible_for_nsxt.nsxt_principal_identities:
+      expedient.ansible_for_nsxt.nsxt_principal_identities:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: List All Logical Switches
-      vmware.ansible_for_nsxt.nsxt_logical_switches_facts:
+      expedient.ansible_for_nsxt.nsxt_logical_switches_facts:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

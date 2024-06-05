@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Get all licenses
-      vmware.ansible_for_nsxt.nsxt_licenses_facts:
+      expedient.ansible_for_nsxt.nsxt_licenses_facts:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

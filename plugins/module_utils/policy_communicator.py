@@ -24,8 +24,8 @@ import hashlib
 
 from ansible.module_utils.urls import open_url
 from ansible.module_utils.six.moves.urllib.error import HTTPError
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import get_certificate_file_path
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import is_json
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import get_certificate_file_path
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import is_json
 
 import six.moves.urllib.parse as urlparse
 

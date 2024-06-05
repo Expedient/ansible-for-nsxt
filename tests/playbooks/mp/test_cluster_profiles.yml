@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Add edge cluster
-      vmware.ansible_for_nsxt.nsxt_cluster_profiles:
+      expedient.ansible_for_nsxt.nsxt_cluster_profiles:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

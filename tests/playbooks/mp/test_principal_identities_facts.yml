@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: List all existing principal identities
-      vmware.ansible_for_nsxt.nsxt_principal_identities_facts:
+      expedient.ansible_for_nsxt.nsxt_principal_identities_facts:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

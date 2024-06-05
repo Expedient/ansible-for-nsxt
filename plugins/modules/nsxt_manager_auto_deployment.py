@@ -108,8 +108,8 @@ RETURN = '''# '''
 
 import json, time
 from ansible.module_utils.basic import AnsibleModule
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import vmware_argument_spec, request, get_vc_ip_from_display_name
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.vcenter_utils import get_resource_id_from_name
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import vmware_argument_spec, request, get_vc_ip_from_display_name
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.vcenter_utils import get_resource_id_from_name
 from ansible.module_utils._text import to_native
 
 FAILED_STATES = ["UNKNOWN_STATE", "VM_DEPLOYMENT_FAILED", "VM_POWER_ON_FAILED", "VM_ONLINE_FAILED", "VM_CLUSTERING_FAILED",

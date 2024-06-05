@@ -90,8 +90,8 @@ RETURN = '''# '''
 
 import json, time
 from ansible.module_utils.basic import AnsibleModule
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import vmware_argument_spec, request
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.common_utils import get_attribute_from_endpoint, clean_and_get_params, get_upgrade_orchestrator_node
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import vmware_argument_spec, request
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.common_utils import get_attribute_from_endpoint, clean_and_get_params, get_upgrade_orchestrator_node
 from ansible.module_utils._text import to_native
 
 

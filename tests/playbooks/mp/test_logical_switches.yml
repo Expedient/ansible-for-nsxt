@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Create logical switch
-      vmware.ansible_for_nsxt.nsxt_logical_switches:
+      expedient.ansible_for_nsxt.nsxt_logical_switches:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

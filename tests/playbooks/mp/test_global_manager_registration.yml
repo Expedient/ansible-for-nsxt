@@ -9,7 +9,7 @@
     - answerfile.yml
   tasks:
     - name: Register global manager
-      vmware.ansible_for_nsxt.nsxt_global_manager_registration:
+      expedient.ansible_for_nsxt.nsxt_global_manager_registration:
           hostname: "{{ hostname }}"
           username: "{{ username }}"
           password: "{{ password }}"

@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Create transport nodes
-      vmware.ansible_for_nsxt.nsxt_transport_nodes:
+      expedient.ansible_for_nsxt.nsxt_transport_nodes:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

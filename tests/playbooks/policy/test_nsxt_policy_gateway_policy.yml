@@ -7,7 +7,7 @@
 - hosts: localhost
   tasks:
     - name: create Gateway Policy
-      vmware.ansible_for_nsxt.nsxt_policy_gateway_policy:
+      expedient.ansible_for_nsxt.nsxt_policy_gateway_policy:
         hostname: "default"
         nsx_cert_path: /root/com.vmware.nsx.ncp/nsx.crt
         nsx_key_path: /root/com.vmware.nsx.ncp/nsx.key

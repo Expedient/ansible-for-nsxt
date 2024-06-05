@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: deploy NSX Manager OVA
-      vmware.ansible_for_nsxt.nsxt_deploy_ova:
+      expedient.ansible_for_nsxt.nsxt_deploy_ova:
         ovftool_path: "/usr/bin"
         #folder: 'folder-os-datacenter'
         datacenter: "os-datacenter"

@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Upgrade UC
-      vmware.ansible_for_nsxt.nsxt_upgrade_uc:
+      expedient.ansible_for_nsxt.nsxt_upgrade_uc:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

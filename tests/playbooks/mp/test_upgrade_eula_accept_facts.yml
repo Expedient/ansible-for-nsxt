@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Retrieve information about EULA acceptance
-      vmware.ansible_for_nsxt.nsxt_upgrade_eula_accept_facts:
+      expedient.ansible_for_nsxt.nsxt_upgrade_eula_accept_facts:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

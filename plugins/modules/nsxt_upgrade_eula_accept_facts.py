@@ -65,8 +65,8 @@ RETURN = '''# '''
 
 import json, time
 from ansible.module_utils.basic import AnsibleModule
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import vmware_argument_spec, request
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.common_utils import get_id_from_display_name_results
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import vmware_argument_spec, request
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.common_utils import get_id_from_display_name_results
 from ansible.module_utils._text import to_native
 
 def main():

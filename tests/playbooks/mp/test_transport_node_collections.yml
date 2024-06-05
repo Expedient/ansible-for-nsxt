@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Attach Transport node profile to cluster
-      vmware.ansible_for_nsxt.nsxt_transport_node_collections:
+      expedient.ansible_for_nsxt.nsxt_transport_node_collections:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

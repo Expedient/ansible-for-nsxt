@@ -30,8 +30,8 @@ import sys
 
 import os
 
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.policy_communicator import PolicyCommunicator
-import ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.nsxt_base_resource as nsxt_base_resource
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.policy_communicator import PolicyCommunicator
+import ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.nsxt_base_resource as nsxt_base_resource
 
 
 class SimpleDummyNSXTResource(nsxt_base_resource.NSXTBaseRealizableResource):
@@ -202,7 +202,7 @@ class NSXTBaseRealizableResourceTestCase(unittest.TestCase):
         nsxt_base_resource.BASE_RESOURCES = self.init_base_resources
         return super().tearDown()
 
-    @patch('ansible_collections.vmware.ansible_for_nsxt.plugins.'
+    @patch('ansible_collections.expedient.ansible_for_nsxt.plugins.'
            'module_utils.nsxt_base_resource.PolicyCommunicator')
     def test_realize(self, mock_policy_communicator):
         init_base_resources = nsxt_base_resource.BASE_RESOURCES
@@ -768,7 +768,7 @@ class NSXTBaseRealizableResourceTestCase(unittest.TestCase):
 
         self.assertEqual(expected_params, observed_params)
 
-    @patch('ansible_collections.vmware.ansible_for_nsxt.plugins.'
+    @patch('ansible_collections.expedient.ansible_for_nsxt.plugins.'
            'module_utils.nsxt_base_resource.PolicyCommunicator')
     def test_send_request_to_API(self, mock_policy_communicator):
         mock_policy_communicator.request.return_value = (200, "OK")
@@ -832,7 +832,7 @@ class NSXTBaseRealizableResourceTestCase(unittest.TestCase):
 
         nsxt_base_resource.BASE_RESOURCES = init_base_resources
 
-    @patch('ansible_collections.vmware.ansible_for_nsxt.plugins.'
+    @patch('ansible_collections.expedient.ansible_for_nsxt.plugins.'
            'module_utils.nsxt_base_resource.PolicyCommunicator')
     def test_achieve_present_state(self, mock_policy_communicator):
         init_base_resources = nsxt_base_resource.BASE_RESOURCES
@@ -935,7 +935,7 @@ class NSXTBaseRealizableResourceTestCase(unittest.TestCase):
         test_create_new_resource()
         nsxt_base_resource.BASE_RESOURCES = init_base_resources
 
-    @patch('ansible_collections.vmware.ansible_for_nsxt.plugins.'
+    @patch('ansible_collections.expedient.ansible_for_nsxt.plugins.'
            'module_utils.nsxt_base_resource.PolicyCommunicator')
     def test_achieve_absent_state(self, mock_policy_communicator):
         init_base_resources = nsxt_base_resource.BASE_RESOURCES

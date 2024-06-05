@@ -9,7 +9,7 @@
     - answerfile.yml
   tasks:
     - name: Make the global manager as Active
-      vmware.ansible_for_nsxt.nsxt_global_manager_enable_service:
+      expedient.ansible_for_nsxt.nsxt_global_manager_enable_service:
           hostname: "{{ global_managers[0].fqdn }}"
           username: "{{ global_managers[0].username }}"
           password: "{{ global_managers[0].password }}"

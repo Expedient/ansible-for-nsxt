@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: List edge clusters
-      vmware.ansible_for_nsxt.nsxt_edge_clusters_facts:
+      expedient.ansible_for_nsxt.nsxt_edge_clusters_facts:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

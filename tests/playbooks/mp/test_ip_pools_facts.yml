@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: List IP pools
-      vmware.ansible_for_nsxt.nsxt_ip_pools_facts:
+      expedient.ansible_for_nsxt.nsxt_ip_pools_facts:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

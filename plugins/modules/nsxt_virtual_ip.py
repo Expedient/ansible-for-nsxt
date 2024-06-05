@@ -85,8 +85,8 @@ RETURN = '''# '''
 
 import json, time
 from ansible.module_utils.basic import AnsibleModule
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import vmware_argument_spec, request
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.common_utils import check_if_valid_ip, get_attribute_from_endpoint
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import vmware_argument_spec, request
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.common_utils import check_if_valid_ip, get_attribute_from_endpoint
 from ansible.module_utils._text import to_native
 
 def get_virtual_ip_params(args=None):

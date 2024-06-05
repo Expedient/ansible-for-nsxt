@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Create uplink profile
-      vmware.ansible_for_nsxt.nsxt_uplink_profiles:
+      expedient.ansible_for_nsxt.nsxt_uplink_profiles:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

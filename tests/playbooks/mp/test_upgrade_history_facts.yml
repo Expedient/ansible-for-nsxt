@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Get upgrade history
-      vmware.ansible_for_nsxt.nsxt_upgrade_history:
+      expedient.ansible_for_nsxt.nsxt_upgrade_history:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

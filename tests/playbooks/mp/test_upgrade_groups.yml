@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Create upgrade groups
-      vmware.ansible_for_nsxt.nsxt_upgrade_groups:
+      expedient.ansible_for_nsxt.nsxt_upgrade_groups:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

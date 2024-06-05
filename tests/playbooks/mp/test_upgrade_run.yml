@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Runs Upgrade
-      vmware.ansible_for_nsxt.nsxt_upgrade_run:
+      expedient.ansible_for_nsxt.nsxt_upgrade_run:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

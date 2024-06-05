@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Toggle tier 1 route advertisement
-      vmware.ansible_for_nsxt.nsxt_route_advertise:
+      expedient.ansible_for_nsxt.nsxt_route_advertise:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

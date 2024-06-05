@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Create transport zone
-      vmware.ansible_for_nsxt.nsxt_transport_zones:
+      expedient.ansible_for_nsxt.nsxt_transport_zones:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

@@ -5,7 +5,7 @@
     - upgrade_vars.yml
   tasks:
     - name: Run and abort upgrade prechecks
-      vmware.ansible_for_nsxt.nsxt_upgrade_prechecks:
+      expedient.ansible_for_nsxt.nsxt_upgrade_prechecks:
         hostname: "{{ nsx_manager }}"
         username: "{{ nsx_username }}"
         password: "{{ nsx_password }}"

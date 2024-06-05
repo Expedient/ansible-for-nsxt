@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Get upgrade pre and post checks info
-      vmware.ansible_for_nsxt.nsxt_upgrade_pre_post_checks_facts:
+      expedient.ansible_for_nsxt.nsxt_upgrade_pre_post_checks_facts:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

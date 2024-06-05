@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Run and abort upgrade prechecks
-      vmware.ansible_for_nsxt.nsxt_upgrade_prechecks:
+      expedient.ansible_for_nsxt.nsxt_upgrade_prechecks:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

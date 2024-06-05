@@ -10,7 +10,7 @@
     nsxt_password: password
   tasks:
     - name: create a new segment
-      vmware.ansible_for_nsxt.nsxt_rest:
+      expedient.ansible_for_nsxt.nsxt_rest:
         hostname: "{{ nsxt_hostname }}"
         username: "{{ nsxt_username }}"
         password: "{{ nsxt_password }}"
@@ -37,7 +37,7 @@
           - create_new_segment_result.body.subnets.0.gateway_address == "192.168.0.1/24"
 
     - name: create a new segment(again - expectation no change will occur)
-      vmware.ansible_for_nsxt.nsxt_rest:
+      expedient.ansible_for_nsxt.nsxt_rest:
         hostname: "{{ nsxt_hostname }}"
         username: "{{ nsxt_username }}"
         password: "{{ nsxt_password }}"
@@ -64,7 +64,7 @@
           - create_new_segment_again_result.body.subnets.0.gateway_address == "192.168.0.1/24"
 
     - name: update segment parameter
-      vmware.ansible_for_nsxt.nsxt_rest:
+      expedient.ansible_for_nsxt.nsxt_rest:
         hostname: "{{ nsxt_hostname }}"
         username: "{{ nsxt_username }}"
         password: "{{ nsxt_password }}"
@@ -91,7 +91,7 @@
           - update_segment_parameter_result.body.subnets.0.gateway_address == "192.168.0.2/24"
 
     - name: update segment parameter(again - expectation no change will occur)
-      vmware.ansible_for_nsxt.nsxt_rest:
+      expedient.ansible_for_nsxt.nsxt_rest:
         hostname: "{{ nsxt_hostname }}"
         username: "{{ nsxt_username }}"
         password: "{{ nsxt_password }}"
@@ -118,7 +118,7 @@
           - update_segment_parameter_again_result.body.subnets.0.gateway_address == "192.168.0.2/24"
 
     - name: get segment information
-      vmware.ansible_for_nsxt.nsxt_rest:
+      expedient.ansible_for_nsxt.nsxt_rest:
         hostname: "{{ nsxt_hostname }}"
         username: "{{ nsxt_username }}"
         password: "{{ nsxt_password }}"
@@ -136,7 +136,7 @@
           - get_segment_information_result.body.subnets.0.gateway_address == "192.168.0.2/24"
 
     - name: delete a segment
-      vmware.ansible_for_nsxt.nsxt_rest:
+      expedient.ansible_for_nsxt.nsxt_rest:
         hostname: "{{ nsxt_hostname }}"
         username: "{{ nsxt_username }}"
         password: "{{ nsxt_password }}"
@@ -150,7 +150,7 @@
           - delete_segment_result.changed is sameas true
 
     - name: delete a segment(again - expectation no change will occur)
-      vmware.ansible_for_nsxt.nsxt_rest:
+      expedient.ansible_for_nsxt.nsxt_rest:
         hostname: "{{ nsxt_hostname }}"
         username: "{{ nsxt_username }}"
         password: "{{ nsxt_password }}"
@@ -182,7 +182,7 @@
           - create_json_file_result.changed is sameas true
 
     - name: create a new segment with json file
-      vmware.ansible_for_nsxt.nsxt_rest:
+      expedient.ansible_for_nsxt.nsxt_rest:
         hostname: "{{ nsxt_hostname }}"
         username: "{{ nsxt_username }}"
         password: "{{ nsxt_password }}"
@@ -201,7 +201,7 @@
           - create_new_segment_result.body.subnets.0.gateway_address == "192.168.0.1/24"
 
     - name: create a new segment with json file(again - expectation no change will occur)
-      vmware.ansible_for_nsxt.nsxt_rest:
+      expedient.ansible_for_nsxt.nsxt_rest:
         hostname: "{{ nsxt_hostname }}"
         username: "{{ nsxt_username }}"
         password: "{{ nsxt_password }}"
@@ -238,7 +238,7 @@
           - update_json_file_result.changed is sameas true
 
     - name: update segment parameter
-      vmware.ansible_for_nsxt.nsxt_rest:
+      expedient.ansible_for_nsxt.nsxt_rest:
         hostname: "{{ nsxt_hostname }}"
         username: "{{ nsxt_username }}"
         password: "{{ nsxt_password }}"
@@ -257,7 +257,7 @@
           - update_segment_parameter_result.body.subnets.0.gateway_address == "192.168.0.2/24"
 
     - name: update segment parameter(again - expectation no change will occur)
-      vmware.ansible_for_nsxt.nsxt_rest:
+      expedient.ansible_for_nsxt.nsxt_rest:
         hostname: "{{ nsxt_hostname }}"
         username: "{{ nsxt_username }}"
         password: "{{ nsxt_password }}"
@@ -276,7 +276,7 @@
           - update_segment_parameter_again_result.body.subnets.0.gateway_address == "192.168.0.2/24"
 
     - name: delete a segment
-      vmware.ansible_for_nsxt.nsxt_rest:
+      expedient.ansible_for_nsxt.nsxt_rest:
         hostname: "{{ nsxt_hostname }}"
         username: "{{ nsxt_username }}"
         password: "{{ nsxt_password }}"

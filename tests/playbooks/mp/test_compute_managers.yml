@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Register compute manager
-      vmware.ansible_for_nsxt.nsxt_fabric_compute_managers:
+      expedient.ansible_for_nsxt.nsxt_fabric_compute_managers:
           hostname: "{{hostname}}"
           username: "{{username}}"
           password: "{{password}}"

@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Create ip block
-      vmware.ansible_for_nsxt.nsxt_ip_blocks:
+      expedient.ansible_for_nsxt.nsxt_ip_blocks:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

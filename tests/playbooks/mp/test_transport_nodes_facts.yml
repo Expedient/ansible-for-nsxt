@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: List Transport Nodes
-      vmware.ansible_for_nsxt.nsxt_transport_nodes_facts:
+      expedient.ansible_for_nsxt.nsxt_transport_nodes_facts:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

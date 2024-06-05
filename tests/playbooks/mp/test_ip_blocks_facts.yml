@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: List IP address block
-      vmware.ansible_for_nsxt.nsxt_ip_blocks_facts:
+      expedient.ansible_for_nsxt.nsxt_ip_blocks_facts:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

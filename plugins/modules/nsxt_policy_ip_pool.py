@@ -35,7 +35,7 @@ description:
 version_added: "2.8"
 author: Gautam Verma
 extends_documentation_fragment:
-    - vmware.ansible_for_nsxt.vmware_nsxt
+    - expedient.ansible_for_nsxt.vmware_nsxt
 options:
     id:
         description: The id of the Policy IP Pool.
@@ -244,8 +244,8 @@ RETURN = '''# '''
 import json
 import time
 from ansible.module_utils.basic import AnsibleModule
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.nsxt_base_resource import NSXTBaseRealizableResource
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.nsxt_resource_urls import (
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.nsxt_base_resource import NSXTBaseRealizableResource
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.nsxt_resource_urls import (
     IP_ADDRESS_POOL_SUBNET_URL, IP_BLOCK_URL, IP_POOL_URL)
 from ansible.module_utils._text import to_native
 

@@ -9,7 +9,7 @@
     - answerfile.yml
   tasks:
     - name: Register vidm to NSX
-      vmware.ansible_for_nsxt.nsxt_vidm:
+      expedient.ansible_for_nsxt.nsxt_vidm:
         hostname: "{{ hostname }}"
         username: "{{ username }}"
         password: "{{ password }}"

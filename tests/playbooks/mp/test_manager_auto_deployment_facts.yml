@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Lists info for all cluster node VM auto-deployment
-      vmware.ansible_for_nsxt.nsxt_manager_auto_deployment_facts:
+      expedient.ansible_for_nsxt.nsxt_manager_auto_deployment_facts:
           hostname: "{{hostname}}"
           username: "{{username}}"
           password: "{{password}}"

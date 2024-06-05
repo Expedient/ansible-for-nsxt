@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Get all configured cluster virtual IP address
-      vmware.ansible_for_nsxt.nsxt_virtual_ip_facts:
+      expedient.ansible_for_nsxt.nsxt_virtual_ip_facts:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Add license
-      vmware.ansible_for_nsxt.nsxt_licenses:
+      expedient.ansible_for_nsxt.nsxt_licenses:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

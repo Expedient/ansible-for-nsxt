@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: List all cluster profiles
-      vmware.ansible_for_nsxt.nsxt_cluster_profiles_facts:
+      expedient.ansible_for_nsxt.nsxt_cluster_profiles_facts:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

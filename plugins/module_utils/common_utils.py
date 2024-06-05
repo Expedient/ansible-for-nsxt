@@ -12,7 +12,7 @@
 # WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 # EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 import time
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import request
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import request
 from ansible.module_utils._text import to_native
 import ipaddress
 

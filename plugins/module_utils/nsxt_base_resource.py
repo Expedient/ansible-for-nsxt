@@ -19,8 +19,8 @@
 # EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.policy_communicator import PolicyCommunicator
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.policy_communicator import DuplicateRequestError
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.policy_communicator import PolicyCommunicator
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.policy_communicator import DuplicateRequestError
 
 from ansible.module_utils.basic import AnsibleModule
 from ansible.module_utils._text import to_native

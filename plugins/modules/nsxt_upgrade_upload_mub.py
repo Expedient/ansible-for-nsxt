@@ -68,8 +68,8 @@ import os
 import json
 import time
 from ansible.module_utils.basic import AnsibleModule
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import vmware_argument_spec, request
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.common_utils import wait_for_operation_to_execute
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import vmware_argument_spec, request
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.common_utils import wait_for_operation_to_execute
 from ansible.module_utils._text import to_native
 
 

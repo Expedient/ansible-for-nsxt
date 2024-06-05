@@ -128,8 +128,8 @@ RETURN = '''# '''
 
 import json, time
 from ansible.module_utils.basic import AnsibleModule
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import vmware_argument_spec, request
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.nsxt_resource_urls import TRANSPORT_ZONE_URL
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import vmware_argument_spec, request
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.nsxt_resource_urls import TRANSPORT_ZONE_URL
 from ansible.module_utils._text import to_native
 
 

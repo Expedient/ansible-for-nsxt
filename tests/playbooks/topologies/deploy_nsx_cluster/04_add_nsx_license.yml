@@ -11,7 +11,7 @@
     - deploy_nsx_cluster_vars.yml
   tasks:
     - name: Add NSX License
-      vmware.ansible_for_nsxt.nsxt_licenses:
+      expedient.ansible_for_nsxt.nsxt_licenses:
           hostname: "{{ nsx_node1.mgmt_ip }}"
           username: "{{ nsx_username }}"
           password: "{{ nsx_password }}"

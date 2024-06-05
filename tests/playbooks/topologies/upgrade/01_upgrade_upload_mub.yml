@@ -5,7 +5,7 @@
     - upgrade_vars.yml
   tasks:
     - name: Upload MUB to NSX-T Manager
-      vmware.ansible_for_nsxt.nsxt_upgrade_upload_mub:
+      expedient.ansible_for_nsxt.nsxt_upgrade_upload_mub:
         hostname: "{{  nsx_manager  }}"
         username: "{{  nsx_username  }}"
         password: "{{  nsx_password  }}"

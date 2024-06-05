@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Deploy and register a cluster node VM
-      vmware.ansible_for_nsxt.nsxt_manager_auto_deployment:
+      expedient.ansible_for_nsxt.nsxt_manager_auto_deployment:
           hostname: "{{hostname}}"
           username: "{{username}}"
           password: "{{password}}"

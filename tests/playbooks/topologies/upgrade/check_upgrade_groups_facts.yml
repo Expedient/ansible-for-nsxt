@@ -5,7 +5,7 @@
     - upgrade_vars.yml
   tasks:
     - name: Get upgrade groups info
-      vmware.ansible_for_nsxt.nsxt_upgrade_groups_facts:
+      expedient.ansible_for_nsxt.nsxt_upgrade_groups_facts:
         hostname: "{{ nsx_manager }}"
         username: "{{ nsx_username }}"
         password: "{{ nsx_password}}"

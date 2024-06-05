@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: deploy NSX Manager OVA
-      vmware.ansible_for_nsxt.nsxt_deploy_ova:
+      expedient.ansible_for_nsxt.nsxt_deploy_ova:
         ovftool_path: "/usr/bin"
         datacenter: "private_dc"
         datastore: "data store"
@@ -33,7 +33,7 @@
         role: "nsx-manager nsx-controller"
 
     - name: Check manager status
-      vmware.ansible_for_nsxt.nsxt_manager_status:
+      expedient.ansible_for_nsxt.nsxt_manager_status:
           hostname: "{{hostname}}"
           username: "{{username}}"
           password: "{{password}}"
@@ -41,7 +41,7 @@
           wait_time: 50
 
     - name: Deploy compute manager
-      vmware.ansible_for_nsxt.nsxt_fabric_compute_managers:
+      expedient.ansible_for_nsxt.nsxt_fabric_compute_managers:
           hostname: "{{hostname}}"
           username: "{{username}}"
           password: "{{password}}"
@@ -58,7 +58,7 @@
       register: compute_manager
 
     - name: Deploy controller
-      vmware.ansible_for_nsxt.nsxt_controllers:
+      expedient.ansible_for_nsxt.nsxt_controllers:
           hostname: "{{hostname}}"
           username: "{{username}}"
           password: "{{password}}"
@@ -90,7 +90,7 @@
           state: present
 
     - name: Create ip pool
-      vmware.ansible_for_nsxt.nsxt_ip_pools:
+      expedient.ansible_for_nsxt.nsxt_ip_pools:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"
@@ -102,7 +102,7 @@
         - "{{ip_pools}}"
 
     - name: Create transport zone
-      vmware.ansible_for_nsxt.nsxt_transport_zones:
+      expedient.ansible_for_nsxt.nsxt_transport_zones:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"
@@ -131,7 +131,7 @@
     #   register: logical_switch
 
     - name: Create uplink profile
-      vmware.ansible_for_nsxt.nsxt_uplink_profiles:
+      expedient.ansible_for_nsxt.nsxt_uplink_profiles:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"
@@ -146,7 +146,7 @@
         - "{{uplink_profiles}}"
 
     - name: Create transport node
-      vmware.ansible_for_nsxt.nsxt_transport_nodes:
+      expedient.ansible_for_nsxt.nsxt_transport_nodes:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

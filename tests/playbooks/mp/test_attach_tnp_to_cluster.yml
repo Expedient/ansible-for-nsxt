@@ -8,7 +8,7 @@
     - answerfile_attach_tnp_to_cluster.yml
   tasks:
     - name: Register compute manager
-      vmware.ansible_for_nsxt.nsxt_fabric_compute_managers:
+      expedient.ansible_for_nsxt.nsxt_fabric_compute_managers:
           hostname: "{{hostname}}"
           username: "{{username}}"
           password: "{{password}}"
@@ -26,7 +26,7 @@
         - "{{compute_managers}}"
 
     - name: Create ip pool
-      vmware.ansible_for_nsxt.nsxt_ip_pools:
+      expedient.ansible_for_nsxt.nsxt_ip_pools:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"
@@ -38,7 +38,7 @@
         - "{{ip_pools}}"
 
     - name: Create transport zone
-      vmware.ansible_for_nsxt.nsxt_transport_zones:
+      expedient.ansible_for_nsxt.nsxt_transport_zones:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"
@@ -53,7 +53,7 @@
         - "{{transportzones}}"
 
     - name: Create uplink profile
-      vmware.ansible_for_nsxt.nsxt_uplink_profiles:
+      expedient.ansible_for_nsxt.nsxt_uplink_profiles:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"
@@ -68,7 +68,7 @@
         - "{{uplink_profiles}}"
 
     - name: Create transport node profile
-      vmware.ansible_for_nsxt.nsxt_transport_node_profiles:
+      expedient.ansible_for_nsxt.nsxt_transport_node_profiles:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"
@@ -85,7 +85,7 @@
         - "{{transport_node_profiles}}"
 
     - name: Attach Transport node profile to cluster
-      vmware.ansible_for_nsxt.nsxt_transport_node_collections:
+      expedient.ansible_for_nsxt.nsxt_transport_node_collections:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

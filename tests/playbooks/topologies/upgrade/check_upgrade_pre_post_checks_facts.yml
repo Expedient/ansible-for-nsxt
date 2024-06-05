@@ -5,7 +5,7 @@
     - upgrade_vars.yml
   tasks:
     - name: Get upgrade pre and post checks info
-      vmware.ansible_for_nsxt.nsxt_upgrade_pre_post_checks_facts:
+      expedient.ansible_for_nsxt.nsxt_upgrade_pre_post_checks_facts:
         hostname: "{{ nsx_manager }}"
         username: "{{ nsx_username }}"
         password: "{{ nsx_password}}"

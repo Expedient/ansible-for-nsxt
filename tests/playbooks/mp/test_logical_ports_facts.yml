@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: List logical ports
-      vmware.ansible_for_nsxt.nsxt_logical_ports_facts:
+      expedient.ansible_for_nsxt.nsxt_logical_ports_facts:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

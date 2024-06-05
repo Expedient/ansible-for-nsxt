@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Run upgrade postchecks
-      vmware.ansible_for_nsxt.nsxt_upgrade_postchecks:
+      expedient.ansible_for_nsxt.nsxt_upgrade_postchecks:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

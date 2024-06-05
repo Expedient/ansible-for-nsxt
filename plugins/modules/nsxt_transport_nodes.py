@@ -575,7 +575,7 @@ EXAMPLES = '''
     
     
 - name: Create edge transport nodes
-  vmware.ansible_for_nsxt.nsxt_transport_nodes:
+  expedient.ansible_for_nsxt.nsxt_transport_nodes:
     hostname: "{{mgr_0_ip_address}}"
     username: "{{username}}"
     password: "{{password}}"
@@ -663,8 +663,8 @@ RETURN = '''# '''
 
 import json, time
 from ansible.module_utils.basic import AnsibleModule
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import vmware_argument_spec, request, get_vc_ip_from_display_name
-from ansible_collections.vmware.ansible_for_nsxt.plugins.module_utils.vcenter_utils import get_resource_id_from_name, get_data_network_id_from_name
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.vmware_nsxt import vmware_argument_spec, request, get_vc_ip_from_display_name
+from ansible_collections.expedient.ansible_for_nsxt.plugins.module_utils.vcenter_utils import get_resource_id_from_name, get_data_network_id_from_name
 from ansible.module_utils._text import to_native
 import socket
 import hashlib

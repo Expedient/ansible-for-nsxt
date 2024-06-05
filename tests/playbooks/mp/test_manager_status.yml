@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Check manager status
-      vmware.ansible_for_nsxt.nsxt_manager_status:
+      expedient.ansible_for_nsxt.nsxt_manager_status:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

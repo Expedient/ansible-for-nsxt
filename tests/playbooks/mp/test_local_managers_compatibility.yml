@@ -9,7 +9,7 @@
     - answerfile.yml
   tasks:
     - name: Checks the compatibility of a local manager for registration with a global manager
-      vmware.ansible_for_nsxt.nsxt_local_managers_compatibility:
+      expedient.ansible_for_nsxt.nsxt_local_managers_compatibility:
           hostname: "{{ hostname }}"
           username: "{{ username }}"
           password: "{{ password }}"

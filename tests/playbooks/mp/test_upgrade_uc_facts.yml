@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Get UC upgrade status
-      vmware.ansible_for_nsxt.nsxt_upgrade_uc_facts:
+      expedient.ansible_for_nsxt.nsxt_upgrade_uc_facts:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

@@ -8,7 +8,7 @@
     - setup_infra_vars.yml
   tasks:
     - name: Create Transport Node Collections
-      vmware.ansible_for_nsxt.nsxt_transport_node_collections:
+      expedient.ansible_for_nsxt.nsxt_transport_node_collections:
         hostname: "{{ nsx_node1.mgmt_ip }}"
         username: "{{ nsx_username }}"
         password: "{{ nsx_password }}"

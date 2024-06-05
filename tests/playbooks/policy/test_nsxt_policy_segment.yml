@@ -7,7 +7,7 @@
 - hosts: localhost
   tasks:
     - name: Update Segment
-      vmware.ansible_for_nsxt.nsxt_policy_segment:
+      expedient.ansible_for_nsxt.nsxt_policy_segment:
         hostname: "default"
         nsx_cert_path: /root/com.vmware.nsx.ncp/nsx.crt
         nsx_key_path: /root/com.vmware.nsx.ncp/nsx.key

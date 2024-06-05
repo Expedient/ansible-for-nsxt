@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Get repo sync status of an auto deployed node
-      vmware.ansible_for_nsxt.nsxt_repo_sync_facts:
+      expedient.ansible_for_nsxt.nsxt_repo_sync_facts:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"

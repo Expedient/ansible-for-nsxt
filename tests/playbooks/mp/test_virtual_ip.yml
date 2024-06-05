@@ -8,7 +8,7 @@
     - answerfile.yml
   tasks:
     - name: Adds cluster virtual IP address
-      vmware.ansible_for_nsxt.nsxt_virtual_ip:
+      expedient.ansible_for_nsxt.nsxt_virtual_ip:
         hostname: "{{hostname}}"
         username: "{{username}}"
         password: "{{password}}"
