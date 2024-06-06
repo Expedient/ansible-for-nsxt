@@ -714,7 +714,7 @@ def get_id_from_display_name(module, manager_url, mgr_username, mgr_password, va
         if result.__contains__('display_name') and result['display_name'] == display_name:
             return result['id']
     if exit_if_not_found:
-        module.fail_json(msg='No id exist with display name %s' % display_name)
+        module.fail_json(msg='No id exists with display name %s at endpoint %s' % (display_name, endpoint))
 
 def get_tn_from_display_name(module, manager_url, mgr_username, mgr_password, validate_certs, display_name):
     transport_nodes = get_transport_nodes(module, manager_url, mgr_username, mgr_password, validate_certs)
