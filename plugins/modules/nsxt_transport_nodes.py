@@ -989,7 +989,7 @@ def inject_vcenter_info(module, manager_url, mgr_username, mgr_password, validat
     transport_node_params['node_deployment_info']['deployment_config']['vm_deployment_config']['storage_id'] = storage_id
     transport_node_params['node_deployment_info']['deployment_config']['vm_deployment_config']['management_network_id'] = management_network_id
     transport_node_params['node_deployment_info']['deployment_config']['vm_deployment_config']['data_network_ids'] = data_network_ids
-    transport_node_params['node_deployment_info']['vm_deployment_config'].pop('ignore_ssl_verification', None)
+    transport_node_params['node_deployment_info']['deployment_config']['vm_deployment_config'].pop('ignore_ssl_verification', None)
 
 
 def main():
