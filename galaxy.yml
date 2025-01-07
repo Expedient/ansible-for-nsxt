@@ -2,7 +2,7 @@ namespace: expedient
 
 name: ansible_for_nsxt
 
-version: 1.0.3
+version: 1.0.5
 
 readme: README.md
 

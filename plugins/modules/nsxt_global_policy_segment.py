@@ -936,11 +936,6 @@ class NSXTSegment(NSXTBaseRealizableResource):
                 elements='str',
                 type='list'
             ),
-            nsxt_type=dict(
-                type='str',
-                default='local',
-                
-            )
             overlay_id=dict(
                 type='int'
             ),
