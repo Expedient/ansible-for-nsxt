@@ -33,6 +33,7 @@ POLICY_GROUP_URL = _DOMAIN_URL + '/{}/groups'
 SECURITY_POLICY_URL = _DOMAIN_URL + '/{}/security-policies'
 
 SEGMENT_URL = '/infra/segments'
+GLOBAL_SEGMENT_URL = '/global-infra/segments'
 SEGMENT_PORT_URL = SEGMENT_URL + '/{}/ports'
 
 TRANSPORT_ZONE_URL = _ENFORCEMENT_POINT_URL + '/{}/transport-zones'
